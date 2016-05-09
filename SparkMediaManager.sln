@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SparkMediaManager", "SparkMediaManager\SparkMediaManager.csproj", "{22881884-FE18-4451-9070-4837047DAEEC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SparkMediaManager.Tests", "SparkMediaManager.Tests\SparkMediaManager.Tests.csproj", "{F554AF7A-2914-456D-A7CA-C07BD64B22F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{22881884-FE18-4451-9070-4837047DAEEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22881884-FE18-4451-9070-4837047DAEEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22881884-FE18-4451-9070-4837047DAEEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F554AF7A-2914-456D-A7CA-C07BD64B22F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F554AF7A-2914-456D-A7CA-C07BD64B22F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F554AF7A-2914-456D-A7CA-C07BD64B22F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F554AF7A-2914-456D-A7CA-C07BD64B22F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

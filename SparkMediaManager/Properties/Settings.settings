@@ -1,7 +1,24 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SparkMediaManager.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ApiTmdbBaseUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://api.themoviedb.org/3/</Value>
+    </Setting>
+    <Setting Name="prefIdiomaPesquisa" Type="System.String" Scope="User">
+      <Value Profile="(Default)">pt</Value>
+    </Setting>
+    <Setting Name="ApiTmdbKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">a41efefdade1a5130dd72cc2dcd64044</Value>
+    </Setting>
+    <Setting Name="ApiTvdbKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">BFF292D0FBAF9007</Value>
+    </Setting>
+    <Setting Name="ApiTvdbBaseUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://api.thetvdb.com/</Value>
+    </Setting>
+    <Setting Name="ApiTvdbJwtToken" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
 </SettingsFile>
