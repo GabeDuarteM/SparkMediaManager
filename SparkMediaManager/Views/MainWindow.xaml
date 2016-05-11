@@ -1,20 +1,68 @@
 ﻿<metro:MetroWindow
+    x:Class="SparkMediaManager.Views.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
-    xmlns:viewModels="clr-namespace:SparkMediaManager.ViewModels" x:Class="SparkMediaManager.Views.MainWindow"
+    xmlns:properties="clr-namespace:SparkMediaManager.Localization"
     mc:Ignorable="d"
-    Title="Spark MediaManager" Height="760" Width="1280"
+    Title="Spark MediaManager" Height="760" Width="1280" ShowIconOnTitleBar="True"
     BorderThickness="0" GlowBrush="Black"
+    DataContext="{Binding MainViewModel, Source={StaticResource Locator}}"
     WindowStartupLocation="CenterScreen">
-    <metro:MetroWindow.DataContext>
-        <viewModels:MainViewModel />
-    </metro:MetroWindow.DataContext>
+    <metro:MetroWindow.IconTemplate>
+        <DataTemplate>
+            <Rectangle Fill="White" Margin="3">
+                <Rectangle.OpacityMask>
+                    <VisualBrush Visual="{StaticResource appbar_camera_flash_selected}" Stretch="Fill" />
+                </Rectangle.OpacityMask>
+            </Rectangle>
+        </DataTemplate>
+    </metro:MetroWindow.IconTemplate>
+    <metro:MetroWindow.RightWindowCommands>
+        <metro:WindowCommands>
+            <Button Command="{Binding AbrirPreferenciasCommand}">
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Width="15" Height="15"
+                               Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_cog}" />
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+                    <TextBlock Margin="4 0 0 0" VerticalAlignment="Center"
+                               Text="{x:Static properties:Label.preferencias}" />
+                </StackPanel>
+            </Button>
+            <Button Command="{Binding AbrirProcurarConteudoCommand}">
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Width="15" Height="15"
+                               Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_tv}" />
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+                    <TextBlock Margin="4 0 0 0" VerticalAlignment="Center"
+                               Text="{x:Static properties:Label.procurar_conteudo}" />
+                </StackPanel>
+            </Button>
+            <Button Command="{Binding AbrirAdicionarCommand}">
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Width="15" Height="15"
+                               Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_add}" />
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+                    <TextBlock Margin="4 0 0 0" VerticalAlignment="Center"
+                               Text="{x:Static properties:Label.adicionar}" />
+                </StackPanel>
+            </Button>
+        </metro:WindowCommands>
+    </metro:MetroWindow.RightWindowCommands>
     <Grid>
         <TabControl>
-            <TabItem Header="Séries">
+            <TabItem Header="{x:Static properties:Label.Series}">
                 <ScrollViewer VerticalScrollBarVisibility="Auto">
                     <ItemsControl ItemsSource="{Binding LstSeries, UpdateSourceTrigger=PropertyChanged}">
                         <ItemsControl.ItemsPanel>
@@ -29,8 +77,8 @@
                                         <Image Source="{Binding BytCachePoster, UpdateSourceTrigger=PropertyChanged}">
                                             <Image.OpacityMask>
                                                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                                    <GradientStop Offset="0.96"/>
-                                                    <GradientStop Color="White" Offset="0.699"/>
+                                                    <GradientStop Offset="0.96" />
+                                                    <GradientStop Color="White" Offset="0.699" />
                                                 </LinearGradientBrush>
                                             </Image.OpacityMask>
                                         </Image>
@@ -41,8 +89,8 @@
                     </ItemsControl>
                 </ScrollViewer>
             </TabItem>
-            <TabItem Header="Animes" />
-            <TabItem Header="Filmes" />
+            <TabItem Header="{x:Static properties:Label.Animes}" />
+            <TabItem Header="{x:Static properties:Label.Filmes}" />
         </TabControl>
     </Grid>
 </metro:MetroWindow>

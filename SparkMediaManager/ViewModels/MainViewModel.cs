@@ -5,9 +5,15 @@
 using System;
 using System.Collections.ObjectModel;
 using System.IO;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Input;
 using System.Windows.Media.Imaging;
 using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.CommandWpf;
+using MahApps.Metro.SimpleChildWindow;
 using SparkMediaManager.Models;
+using SparkMediaManager.Views;
 
 namespace SparkMediaManager.ViewModels
 {
@@ -23,13 +29,21 @@ namespace SparkMediaManager.ViewModels
     ///         See http://www.galasoft.ch/mvvm
     ///     </para>
     /// </summary>
-    public class MainViewModel : ViewModelBase
+    public class MainViewModel : BaseViewModel
     {
         private ObservableCollection<Serie> _lstAnimes;
 
         private ObservableCollection<Filme> _lstFilmes;
 
         private ObservableCollection<Serie> _lstSeries;
+
+        public ICommand AbrirPreferenciasCommand { get; set; }
+        public ICommand AbrirProcurarConteudoCommand { get; set; }
+        public ICommand AbrirAdicionarCommand { get; set; }
+
+        public Window ObjWindow { get; set; }
+
+        public bool blnChildWindowAberta { get; set; }
 
         /// <summary>
         ///     Initializes a new instance of the MainViewModel class.
@@ -94,25 +108,28 @@ namespace SparkMediaManager.ViewModels
             }
             else
             {
-                var bmp = new BitmapImage(new Uri("https://s-media-cache-ak0.pinimg.com/736x/13/f4/10/13f41041a8a5505fb2ac1a5e1d3c6302.jpg"));
-                bmp.DownloadCompleted += (s, e) =>
-                {
-                    var encoder = new BmpBitmapEncoder();
-                    encoder.Frames.Add(BitmapFrame.Create(bmp));
-                    using (var ms = new MemoryStream())
-                    {
-                        encoder.Save(ms);
-                        LstSeries = new ObservableCollection<Serie>
-                        {
-                            new Serie
-                            {
-                                StrTitulo = "Game of Thrones",
-                                BytCachePoster = ms.ToArray()
-                            }
-                        };
-                    }
-                };
+                AbrirPreferenciasCommand = new RelayCommand(AbrirPreferencias, CanAbrirJanela);
+                AbrirProcurarConteudoCommand = new RelayCommand(AbrirProcurarConteudo, CanAbrirJanela);
+                AbrirAdicionarCommand = new RelayCommand(AbrirAdicionar, CanAbrirJanela);
             }
+        }
+
+        private void AbrirProcurarConteudo()
+        {
+        }
+
+        private void AbrirAdicionar()
+        {
+        }
+
+        private bool CanAbrirJanela()
+        {
+            return !blnChildWindowAberta;
+        }
+
+        private async void AbrirPreferencias()
+        {
+            await ObjWindow.ShowChildWindowAsync(new PreferenciasWindow(), (Panel)ObjWindow.Content);
         }
 
         public ObservableCollection<Serie> LstSeries

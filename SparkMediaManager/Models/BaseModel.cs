@@ -13,11 +13,11 @@ using GalaSoft.MvvmLight;
 
 namespace SparkMediaManager.Models
 {
-    public class ModelBase : ObservableObject, INotifyDataErrorInfo
+    public class BaseModel : ObservableObject, INotifyDataErrorInfo
     {
         private void ValidarPropriedade(string propertyName, object value)
         {
-            ModelBase objectToValidate = this;
+            BaseModel objectToValidate = this;
             var results = new List<ValidationResult>();
             bool isValid = Validator.TryValidateProperty(
                                                          value,
@@ -41,7 +41,7 @@ namespace SparkMediaManager.Models
 
         public virtual bool ValidarObjeto()
         {
-            ModelBase objectToValidate = this;
+            BaseModel objectToValidate = this;
             _errors.Clear();
             Type objectType = objectToValidate.GetType();
             PropertyInfo[] properties = objectType.GetProperties();

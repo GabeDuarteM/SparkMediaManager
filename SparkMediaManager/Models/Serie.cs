@@ -9,7 +9,7 @@ using Newtonsoft.Json;
 namespace SparkMediaManager.Models
 {
     [JsonObject("data")]
-    public class Serie : ModelBase, IMidia
+    public class Serie : BaseModel, IMidia
     {
         private string _strTitulo;
 

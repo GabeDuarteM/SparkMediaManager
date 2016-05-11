@@ -1,0 +1,124 @@
+﻿<cw:ChildWindow x:Class="SparkMediaManager.Views.PreferenciasWindow"
+                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                xmlns:local="clr-namespace:SparkMediaManager.Views"
+                xmlns:cw="clr-namespace:MahApps.Metro.SimpleChildWindow;assembly=MahApps.Metro.SimpleChildWindow"
+                xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
+                xmlns:vm="clr-namespace:SparkMediaManager.ViewModels"
+                xmlns:properties="clr-namespace:SparkMediaManager.Localization"
+                mc:Ignorable="d"
+                Title="{ x:Static properties:Label.PREFERENCIAS_}" ChildWindowWidth="630" ChildWindowHeight="433"
+                IsOpen="True" AllowMove="True" ShowCloseButton="True" CloseOnOverlay="True"
+                AllowFocusElement="True" DataContext="{Binding PreferenciasViewModel, Source={StaticResource Locator}}"
+                Loaded="PreferenciasWindow_OnLoaded" ClosingFinished="PreferenciasWindow_OnClosingFinished">
+    <Grid>
+        <TabControl>
+            <TabItem Header="{ x:Static properties:Label.Geral}">
+                <Grid Margin="0 5 0 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="170" />
+                        <ColumnDefinition Width="145" />
+                        <ColumnDefinition Width="35" />
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="30" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <TextBox Text="{Binding StrPastaSerie}"
+                             metro:TextBoxHelper.Watermark="{ x:Static properties:Mensagem.Selecione_a_pasta_onde_estao_armazenadas_as_series}"
+                             Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" />
+                    <Button Grid.Column="5" Grid.Row="0" Width="30" Content="..." />
+                    <TextBox Text="{Binding StrPastaFilme}"
+                             metro:TextBoxHelper.Watermark="{ x:Static properties:Mensagem.Selecione_a_pasta_onde_estao_armazenados_os_filmes}"
+                             Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5" />
+                    <Button Grid.Column="5" Grid.Row="1" Width="30" Content="..." />
+                    <TextBox Text="{Binding StrPastaAnime}"
+                             metro:TextBoxHelper.Watermark="{ x:Static properties:Mensagem.Selecione_a_pasta_onde_estao_armazenados_os_animes}"
+                             Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5" />
+                    <Button Grid.Column="5" Grid.Row="2" Width="30" Content="..." />
+                    <TextBox Text="{Binding StrTorrentBlackhole}"
+                             metro:TextBoxHelper.Watermark="{ x:Static properties:Mensagem.Selecione_a_pasta_onde_serao_armazenados_os_arquivos_Torrent}"
+                             Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="5" />
+                    <Button Grid.Column="5" Grid.Row="3" Width="30" Content="..." />
+                    <Label
+                        Content="{ x:Static properties:Label.Tempo_em_minutos_para_atualizacao_automatica_dos_conteudos}"
+                        Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="4" VerticalAlignment="Center" />
+                    <metro:NumericUpDown Value="{Binding IntTempoAtualizarConteudoNovo}" HasDecimals="False"
+                                         Interval="1" TextAlignment="Left" Grid.Column="3" Grid.Row="4" />
+                    <Label Content="{ x:Static properties:Label.Idioma_de_pesquisa}" Grid.Column="0" Grid.Row="5"
+                           VerticalAlignment="Center" />
+                    <ComboBox ItemsSource="{Binding DicIdiomasPesquisa}"
+                              SelectedValue="{Binding StrIdiomaPesquisaSelecionado}" DisplayMemberPath="Value"
+                              SelectedValuePath="Key" Grid.Column="1" Grid.Row="5" />
+                    <Label Content="{ x:Static properties:Label.Idioma_da_aplicacao}" Grid.Column="0" Grid.Row="6"
+                           VerticalAlignment="Center" />
+                    <ComboBox ItemsSource="{Binding DicIdiomasAplicacao}"
+                              SelectedValue="{Binding EnuIdiomaAplicacaoSelecionado}" DisplayMemberPath="Value"
+                              SelectedValuePath="Key" Grid.Column="1" Grid.Row="6" />
+                    <Label Content="{ x:Static properties:Label.Metodo_de_processamento}" Grid.Column="0" Grid.Row="7"
+                           VerticalAlignment="Center" />
+                    <ComboBox ItemsSource="{Binding DicMetodosProcessamento}"
+                              SelectedValue="{Binding EnuMetodoDeProcessamentoSelecionado}" DisplayMemberPath="Value"
+                              SelectedValuePath="Key" Grid.Column="1" Grid.Row="7" />
+                    <Button Content="{ x:Static properties:Label.Limpar_banco_de_dados}" Width="200" Grid.Column="3"
+                            Grid.ColumnSpan="3" Grid.Row="7" VerticalAlignment="Bottom" HorizontalAlignment="Right" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="{ x:Static properties:Label.Renomear}">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Label Content="{ x:Static properties:Label.Formato_para_series}" Grid.Row="0" Grid.Column="0" />
+                    <TextBox Text="{Binding StrFormatoSerie}"
+                             metro:TextBoxHelper.Watermark="{}{Title} - {SxEE} - {EpisodeTitle}" Grid.Row="0"
+                             Grid.Column="1" />
+                    <Label Content="{ x:Static properties:Label.Formato_para_filmes}" Grid.Row="1" Grid.Column="0" />
+                    <TextBox Text="{Binding StrFormatoFilme}" metro:TextBoxHelper.Watermark="{}{Title} ({Year})"
+                             Grid.Row="1" Grid.Column="1" />
+                    <Label Content="{ x:Static properties:Label.Formato_para_animes}" Grid.Row="2" Grid.Column="0" />
+                    <TextBox Text="{Binding StrFormatoAnime}"
+                             metro:TextBoxHelper.Watermark="{}{Title} - {Absolute} - {EpisodeTitle}" Grid.Row="2"
+                             Grid.Column="1" />
+                    <Label Content="{ x:Static properties:Label.Visualizacao}" Grid.Row="3" Grid.Column="0" />
+                    <Label Content="{Binding StrVisualizacaoFormatoSerie}" Grid.Row="3" Grid.Column="1" />
+                    <Label Content="{Binding StrVisualizacaoFormatoFilme}" Grid.Row="4" Grid.Column="1" />
+                    <Label Content="{Binding StrVisualizacaoFormatoAnime}" Grid.Row="5" Grid.Column="1" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="{ x:Static properties:Label.Feeds}" />
+            <TabItem Header="{ x:Static properties:Label.FeedsDePesquisa}" />
+        </TabControl>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <Button Margin="0 0 1 0" Content="{ x:Static properties:Label.Salvar}" IsDefault="True" />
+            <Button Content="{ x:Static properties:Label.Fechar}" IsCancel="True" />
+        </StackPanel>
+
+    </Grid>
+</cw:ChildWindow>

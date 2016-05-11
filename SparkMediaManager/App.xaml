@@ -20,6 +20,15 @@
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
                 <ResourceDictionary
                     Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+                <!-- Icons -->
+                <ResourceDictionary Source="/Resources/Icons.xaml" />
+                <!-- Styles -->
+                <ResourceDictionary Source="Styles/Textbox.xaml" />
+                <ResourceDictionary Source="Styles/TextboxRequired.xaml" />
+                <ResourceDictionary Source="Styles/Button.xaml" />
+                <ResourceDictionary Source="Styles/ButtonDefault.xaml" />
+                <ResourceDictionary Source="Styles/NumericUpDown.xaml" />
+                <ResourceDictionary Source="Styles/ComboBox.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

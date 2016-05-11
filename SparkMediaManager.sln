@@ -25,4 +25,8 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		RESX_SortFileContentOnSave = True
+		RESX_NeutralResourcesLanguage = pt-BR
+	EndGlobalSection
 EndGlobal

@@ -10,7 +10,7 @@ using Newtonsoft.Json;
 
 namespace SparkMediaManager.Models
 {
-    public class Filme : ModelBase, IMidia
+    public class Filme : BaseModel, IMidia
     {
         [JsonProperty("adult")]
         public bool blnAdulto { get; set; }
