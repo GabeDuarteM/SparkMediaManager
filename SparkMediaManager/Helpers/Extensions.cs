@@ -10,7 +10,6 @@ using System.Windows;
 using System.Windows.Controls;
 using MahApps.Metro.Controls;
 using MahApps.Metro.SimpleChildWindow;
-using SparkMediaManager.Atributos;
 
 namespace SparkMediaManager.Helpers
 {
