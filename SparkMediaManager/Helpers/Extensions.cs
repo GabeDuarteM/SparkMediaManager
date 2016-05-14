@@ -53,8 +53,8 @@ namespace SparkMediaManager.Helpers
                 switch (objAtributo.AttributeType.Name)
                 {
                     case nameof(RangeAttribute):
-                        objNumericUpDown.Minimum = (int)objAtributo.ConstructorArguments.First(x => x.ArgumentType == typeof(int)).Value;
-                        objNumericUpDown.Maximum = (int)objAtributo.ConstructorArguments.Where(x => x.ArgumentType == typeof(int)).Skip(1).First().Value;
+                        objNumericUpDown.Minimum = (int) objAtributo.ConstructorArguments.First(x => x.ArgumentType == typeof(int)).Value;
+                        objNumericUpDown.Maximum = (int) objAtributo.ConstructorArguments.Where(x => x.ArgumentType == typeof(int)).Skip(1).First().Value;
                         break;
                 }
             }

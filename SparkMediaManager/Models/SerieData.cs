@@ -9,10 +9,10 @@ namespace SparkMediaManager.Models
 {
     public class SerieData
     {
-        [JsonProperty("data")]
-        public Serie ObjSerie { get; set; }
         [JsonProperty("errors")]
         public Errors ObjErros { get; set; }
+        [JsonProperty("data")]
+        public Serie ObjSerie { get; set; }
     }
 
     public class Errors

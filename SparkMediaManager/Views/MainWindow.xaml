@@ -7,7 +7,7 @@
     xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
     xmlns:properties="clr-namespace:SparkMediaManager.Localization"
     mc:Ignorable="d"
-    Title="Spark MediaManager" Height="760" Width="1280" ShowIconOnTitleBar="True"
+    Title="Spark MediaManager" Height="720" Width="1280" ShowIconOnTitleBar="True"
     BorderThickness="0" GlowBrush="Black"
     DataContext="{Binding MainViewModel, Source={StaticResource Locator}}"
     WindowStartupLocation="CenterScreen">

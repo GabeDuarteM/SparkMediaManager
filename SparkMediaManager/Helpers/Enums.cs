@@ -3,7 +3,6 @@
 // Created at: 30/04/2016 01:54
 
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
@@ -15,6 +14,13 @@ namespace SparkMediaManager.Helpers
 {
     public static class Enums
     {
+        public enum IdiomaAplicacao
+        {
+            [Display(ResourceType = typeof(Label), Description = "Portugues")] Portugues,
+
+            [Display(ResourceType = typeof(Label), Description = "Ingles")] Ingles
+        }
+
         public enum MetodoDeProcessamento
         {
             HardLink = 0,
@@ -22,12 +28,19 @@ namespace SparkMediaManager.Helpers
             Copiar = 1
         }
 
-        public enum IdiomaAplicacao
+        public enum TipoConteudo
         {
-            [Display(ResourceType = typeof(Label), Description = "Portugues")]
-            Portugues,
-            [Display(ResourceType = typeof(Label), Description = "Ingles")]
-            Ingles
+            [Description("Selecione")] Selecione = 0,
+
+            [Description("Filme")] Filme = 1,
+
+            [Description("Série")] Série = 2,
+
+            [Description("Anime")] Anime = 3,
+
+            [Description("Episódio")] Episódio = 4,
+
+            [Description("Anime, filme e série")] AnimeFilmeSérie = 7
         }
 
         public static string GetDescricao(this Enum enuTipo)
@@ -54,7 +67,7 @@ namespace SparkMediaManager.Helpers
                        : enuTipo.ToString();
         }
 
-        public static Dictionary<Enum,string> GetListaValores(Type enuTipo)
+        public static Dictionary<Enum, string> GetListaValores(Type enuTipo)
         {
             Array arrValores = Enum.GetValues(enuTipo);
 

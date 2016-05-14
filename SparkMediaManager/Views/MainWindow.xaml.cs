@@ -2,7 +2,6 @@
 // 
 // Created at: 08/05/2016 19:21
 
-using MahApps.Metro.SimpleChildWindow;
 using SparkMediaManager.ViewModels;
 
 namespace SparkMediaManager.Views

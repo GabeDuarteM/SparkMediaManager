@@ -18,6 +18,7 @@ namespace SparkMediaManager.ViewModels
         }
 
         public MainViewModel MainViewModel => ServiceLocator.Current.GetInstance<MainViewModel>();
+
         public PreferenciasViewModel PreferenciasViewModel => ServiceLocator.Current.GetInstance<PreferenciasViewModel>();
 
         public static void Cleanup()

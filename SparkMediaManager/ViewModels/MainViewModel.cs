@@ -2,14 +2,11 @@
 // 
 // Created at: 30/04/2016 16:03
 
-using System;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using System.Windows.Media.Imaging;
-using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.CommandWpf;
 using MahApps.Metro.SimpleChildWindow;
 using SparkMediaManager.Models;
@@ -36,14 +33,6 @@ namespace SparkMediaManager.ViewModels
         private ObservableCollection<Filme> _lstFilmes;
 
         private ObservableCollection<Serie> _lstSeries;
-
-        public ICommand AbrirPreferenciasCommand { get; set; }
-        public ICommand AbrirProcurarConteudoCommand { get; set; }
-        public ICommand AbrirAdicionarCommand { get; set; }
-
-        public Window ObjWindow { get; set; }
-
-        public bool blnChildWindowAberta { get; set; }
 
         /// <summary>
         ///     Initializes a new instance of the MainViewModel class.
@@ -114,6 +103,22 @@ namespace SparkMediaManager.ViewModels
             }
         }
 
+        public ICommand AbrirAdicionarCommand { get; set; }
+
+        public ICommand AbrirPreferenciasCommand { get; set; }
+
+        public ICommand AbrirProcurarConteudoCommand { get; set; }
+
+        public bool blnChildWindowAberta { get; set; }
+
+        public ObservableCollection<Serie> LstAnimes { get { return _lstAnimes; } set { Set(ref _lstAnimes, value); } }
+
+        public ObservableCollection<Filme> LstFilmes { get { return _lstFilmes; } set { Set(ref _lstFilmes, value); } }
+
+        public ObservableCollection<Serie> LstSeries { get { return _lstSeries; } set { Set(ref _lstSeries, value); } }
+
+        public Window ObjWindow { get; set; }
+
         private void AbrirProcurarConteudo()
         {
         }
@@ -129,25 +134,7 @@ namespace SparkMediaManager.ViewModels
 
         private async void AbrirPreferencias()
         {
-            await ObjWindow.ShowChildWindowAsync(new PreferenciasWindow(), (Panel)ObjWindow.Content);
-        }
-
-        public ObservableCollection<Serie> LstSeries
-        {
-            get { return _lstSeries; }
-            set { Set(ref _lstSeries, value); }
-        }
-
-        public ObservableCollection<Filme> LstFilmes
-        {
-            get { return _lstFilmes; }
-            set { Set(ref _lstFilmes, value); }
-        }
-
-        public ObservableCollection<Serie> LstAnimes
-        {
-            get { return _lstAnimes; }
-            set { Set(ref _lstAnimes, value); }
+            await ObjWindow.ShowChildWindowAsync(new PreferenciasWindow(), (Panel) ObjWindow.Content);
         }
     }
 }

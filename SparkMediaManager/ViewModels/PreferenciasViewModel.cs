@@ -24,6 +24,12 @@ namespace SparkMediaManager.ViewModels
 
         private int _intTempoAtualizarConteudoNovo;
 
+        private string _strFormatoAnime;
+
+        private string _strFormatoFilme;
+
+        private string _strFormatoSerie;
+
         private string _strIdiomaPesquisaSelecionado;
 
         private string _strPastaAnime;
@@ -34,17 +40,11 @@ namespace SparkMediaManager.ViewModels
 
         private string _strTorrentBlackhole;
 
-        private string _strFormatoSerie;
-
-        private string _strFormatoFilme;
-
-        private string _strFormatoAnime;
-
-        private string _strVisualizacaoFormatoSerie;
+        private string _strVisualizacaoFormatoAnime;
 
         private string _strVisualizacaoFormatoFilme;
 
-        private string _strVisualizacaoFormatoAnime;
+        private string _strVisualizacaoFormatoSerie;
 
         public PreferenciasViewModel()
         {
@@ -65,115 +65,46 @@ namespace SparkMediaManager.ViewModels
             StrVisualizacaoFormatoSerie = "Game of Thrones - S06E03 - Oathbreaker";
             StrVisualizacaoFormatoFilme = "Capitão América Guerra Civil (2016)";
             StrVisualizacaoFormatoAnime = "My Hero Academia - 06 - Rage, You Damn Nerd";
-
         }
 
-        public string StrFormatoSerie
-        {
-            get { return _strFormatoSerie; }
-            set { Set(ref _strFormatoSerie, value); }
-        }
+        public Dictionary<Enum, string> DicIdiomasAplicacao { get { return _dicIdiomasAplicacao; } set { Set(ref _dicIdiomasAplicacao, value); } }
 
-        public string StrFormatoFilme
-        {
-            get { return _strFormatoFilme; }
-            set { Set(ref _strFormatoFilme, value); }
-        }
+        public Dictionary<string, string> DicIdiomasPesquisa { get { return _dicIdiomasPesquisa; } set { Set(ref _dicIdiomasPesquisa, value); } }
 
-        public string StrFormatoAnime
-        {
-            get { return _strFormatoAnime; }
-            set { Set(ref _strFormatoAnime, value); }
-        }
+        public Dictionary<Enum, string> DicMetodosProcessamento { get { return _dicMetodosProcessamento; } set { Set(ref _dicMetodosProcessamento, value); } }
 
-        public string StrVisualizacaoFormatoSerie
-        {
-            get { return _strVisualizacaoFormatoSerie; }
-            set { Set(ref _strVisualizacaoFormatoSerie, value); }
-        }
+        public Enums.IdiomaAplicacao EnuIdiomaAplicacaoSelecionado { get { return _enuIdiomaAplicacaoSelecionado; } set { Set(ref _enuIdiomaAplicacaoSelecionado, value); } }
 
-        public string StrVisualizacaoFormatoFilme
-        {
-            get { return _strVisualizacaoFormatoFilme; }
-            set { Set(ref _strVisualizacaoFormatoFilme, value); }
-        }
-
-        public string StrVisualizacaoFormatoAnime
-        {
-            get { return _strVisualizacaoFormatoAnime; }
-            set { Set(ref _strVisualizacaoFormatoAnime, value); }
-        }
-
-        public Dictionary<Enum, string> DicIdiomasAplicacao
-        {
-            get { return _dicIdiomasAplicacao; }
-            set { Set(ref _dicIdiomasAplicacao, value); }
-        }
-
-        public Dictionary<string, string> DicIdiomasPesquisa
-        {
-            get { return _dicIdiomasPesquisa; }
-            set { Set(ref _dicIdiomasPesquisa, value); }
-        }
-
-        public Dictionary<Enum, string> DicMetodosProcessamento
-        {
-            get { return _dicMetodosProcessamento; }
-            set { Set(ref _dicMetodosProcessamento, value); }
-        }
-
-        public Enums.IdiomaAplicacao EnuIdiomaAplicacaoSelecionado
-        {
-            get { return _enuIdiomaAplicacaoSelecionado; }
-            set { Set(ref _enuIdiomaAplicacaoSelecionado, value); }
-        }
-
-        public Enums.MetodoDeProcessamento EnuMetodoDeProcessamentoSelecionado
-        {
-            get { return _enuMetodoDeProcessamentoSelecionado; }
-            set { Set(ref _enuMetodoDeProcessamentoSelecionado, value); }
-        }
+        public Enums.MetodoDeProcessamento EnuMetodoDeProcessamentoSelecionado { get { return _enuMetodoDeProcessamentoSelecionado; } set { Set(ref _enuMetodoDeProcessamentoSelecionado, value); } }
 
         [Range(0, 999, ErrorMessageResourceType = typeof(Mensagem), ErrorMessageResourceName = "Valor_fora_dos_limites_permitidos")]
-        public int IntTempoAtualizarConteudoNovo
-        {
-            get { return _intTempoAtualizarConteudoNovo; }
-            set { Set(ref _intTempoAtualizarConteudoNovo, value); }
-        }
+        public int IntTempoAtualizarConteudoNovo { get { return _intTempoAtualizarConteudoNovo; } set { Set(ref _intTempoAtualizarConteudoNovo, value); } }
 
-        public string StrIdiomaPesquisaSelecionado
-        {
-            get { return _strIdiomaPesquisaSelecionado; }
-            set { Set(ref _strIdiomaPesquisaSelecionado, value); }
-        }
+        public string StrFormatoAnime { get { return _strFormatoAnime; } set { Set(ref _strFormatoAnime, value); } }
+
+        public string StrFormatoFilme { get { return _strFormatoFilme; } set { Set(ref _strFormatoFilme, value); } }
+
+        public string StrFormatoSerie { get { return _strFormatoSerie; } set { Set(ref _strFormatoSerie, value); } }
+
+        public string StrIdiomaPesquisaSelecionado { get { return _strIdiomaPesquisaSelecionado; } set { Set(ref _strIdiomaPesquisaSelecionado, value); } }
 
         [MaxLength(260)]
-        public string StrPastaAnime
-        {
-            get { return _strPastaAnime; }
-            set { Set(ref _strPastaAnime, value); }
-        }
+        public string StrPastaAnime { get { return _strPastaAnime; } set { Set(ref _strPastaAnime, value); } }
 
         [MaxLength(260)]
-        public string StrPastaFilme
-        {
-            get { return _strPastaFilme; }
-            set { Set(ref _strPastaFilme, value); }
-        }
+        public string StrPastaFilme { get { return _strPastaFilme; } set { Set(ref _strPastaFilme, value); } }
 
         [MaxLength(260)]
-        public string StrPastaSerie
-        {
-            get { return _strPastaSerie; }
-            set { Set(ref _strPastaSerie, value); }
-        }
+        public string StrPastaSerie { get { return _strPastaSerie; } set { Set(ref _strPastaSerie, value); } }
 
         [MaxLength(260)]
-        public string StrTorrentBlackhole
-        {
-            get { return _strTorrentBlackhole; }
-            set { Set(ref _strTorrentBlackhole, value); }
-        }
+        public string StrTorrentBlackhole { get { return _strTorrentBlackhole; } set { Set(ref _strTorrentBlackhole, value); } }
+
+        public string StrVisualizacaoFormatoAnime { get { return _strVisualizacaoFormatoAnime; } set { Set(ref _strVisualizacaoFormatoAnime, value); } }
+
+        public string StrVisualizacaoFormatoFilme { get { return _strVisualizacaoFormatoFilme; } set { Set(ref _strVisualizacaoFormatoFilme, value); } }
+
+        public string StrVisualizacaoFormatoSerie { get { return _strVisualizacaoFormatoSerie; } set { Set(ref _strVisualizacaoFormatoSerie, value); } }
 
         /// <summary>
         ///     Idiomas do TheTVDB. Segundo eles isso é tão dificil de ser alterado que pode ser hardcoded. Para verificar o xml

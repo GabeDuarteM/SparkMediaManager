@@ -15,19 +15,19 @@ namespace SparkMediaManager.Models
         [JsonProperty("adult")]
         public bool blnAdulto { get; set; }
 
-        [JsonProperty("genres")]
-        public IList<Genre> LstGeneros { get; set; }
-
-        public string StrGeneros => string.Join("|", LstGeneros);
+        [JsonProperty("release_date")]
+        public DateTime? DtmLancamento { get; set; }
 
         [JsonProperty("id")]
         public int IntCodigoTmdb { get; set; }
 
+        [JsonProperty("genres")]
+        public IList<Genre> LstGeneros { get; set; }
+
         [JsonProperty("imdb_id")]
         public string StrCodigoImdb { get; set; }
 
-        [JsonProperty("release_date")]
-        public DateTime? DtmLancamento { get; set; }
+        public string StrGeneros => string.Join("|", LstGeneros);
 
         [JsonProperty("status")]
         public string StrStatus { get; set; }

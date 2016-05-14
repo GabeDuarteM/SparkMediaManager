@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Globalization;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
+﻿// Developed by: Gabriel Duarte
+// 
+// Created at: 29/04/2016 23:49
+
 using System.Windows;
-using System.Windows.Markup;
 
 namespace SparkMediaManager
 {
     /// <summary>
-    /// Interaction logic for App.xaml
+    ///     Interaction logic for App.xaml
     /// </summary>
     public partial class App : Application
     {

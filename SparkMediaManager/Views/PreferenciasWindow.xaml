@@ -9,7 +9,7 @@
                 xmlns:vm="clr-namespace:SparkMediaManager.ViewModels"
                 xmlns:properties="clr-namespace:SparkMediaManager.Localization"
                 mc:Ignorable="d"
-                Title="{ x:Static properties:Label.PREFERENCIAS_}" ChildWindowWidth="630" ChildWindowHeight="433"
+                Title="{x:Static properties:Label.PREFERENCIAS_}" ChildWindowWidth="630" ChildWindowHeight="433"
                 IsOpen="True" AllowMove="True" ShowCloseButton="True" CloseOnOverlay="True"
                 AllowFocusElement="True" DataContext="{Binding PreferenciasViewModel, Source={StaticResource Locator}}"
                 Loaded="PreferenciasWindow_OnLoaded" ClosingFinished="PreferenciasWindow_OnClosingFinished">
@@ -112,7 +112,45 @@
                     <Label Content="{Binding StrVisualizacaoFormatoAnime}" Grid.Row="5" Grid.Column="1" />
                 </Grid>
             </TabItem>
-            <TabItem Header="{ x:Static properties:Label.Feeds}" />
+            <TabItem Header="{ x:Static properties:Label.Feeds}">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Height="40" Width="40" Style="{DynamicResource MetroCircleButtonStyle}">
+                            <Rectangle Width="14" Height="14">
+                                <Rectangle.Fill>
+                                    <VisualBrush Visual="{StaticResource appbar_add}" />
+                                </Rectangle.Fill>
+                            </Rectangle>
+                        </Button>
+                        <Button Height="40" Width="40" Style="{DynamicResource MetroCircleButtonStyle}"
+                                Content="&#xf077;" FontFamily="{StaticResource FontAwesome}" FontSize="16"
+                                Padding="0 0 0 5" />
+                        <Button Height="40" Width="40" Style="{DynamicResource MetroCircleButtonStyle}"
+                                Content="&#xf078;" FontFamily="{StaticResource FontAwesome}" FontSize="16"
+                                Padding="0 0 0 2" />
+                        <Button Height="40" Width="40" Style="{DynamicResource MetroCircleButtonStyle}"
+                                Content="&#xf014;" FontFamily="{StaticResource FontAwesome}" FontSize="18" />
+                    </StackPanel>
+                    <DataGrid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"
+                              ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                              ScrollViewer.VerticalScrollBarVisibility="Auto" AutoGenerateColumns="False"
+                              IsReadOnly="True" HeadersVisibility="Column">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Nome" Width="3*" Binding="{Binding sDsFeed}" />
+                            <DataGridTextColumn Header="URL" Width="5*" Binding="{Binding sLkFeed}" />
+                            <DataGridTextColumn Header="Priorid." Width="*" Binding="{Binding nNrPrioridade}" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
             <TabItem Header="{ x:Static properties:Label.FeedsDePesquisa}" />
         </TabControl>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom">

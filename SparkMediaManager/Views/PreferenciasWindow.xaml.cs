@@ -1,26 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿// Developed by: Gabriel Duarte
+// 
+// Created at: 10/05/2016 00:02
+
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using GalaSoft.MvvmLight.Ioc;
-using MahApps.Metro.Controls;
-using MahApps.Metro.SimpleChildWindow;
 using SparkMediaManager.Helpers;
 using SparkMediaManager.ViewModels;
 
 namespace SparkMediaManager.Views
 {
     /// <summary>
-    /// Interaction logic for Preferencias.xaml
+    ///     Interaction logic for Preferencias.xaml
     /// </summary>
     public partial class PreferenciasWindow
     {

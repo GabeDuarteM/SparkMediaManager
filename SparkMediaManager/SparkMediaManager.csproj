@@ -118,6 +118,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Atributos\RequiredSoNaTela.cs" />
     <Compile Include="Helpers\API\Tvdb.cs" />
     <Compile Include="Helpers\Extensions.cs" />
     <Compile Include="Helpers\Helper.cs" />
@@ -132,6 +133,7 @@
       <DependentUpon>Mensagem.resx</DependentUpon>
     </Compile>
     <Compile Include="Models\BaseModel.cs" />
+    <Compile Include="Models\Feed.cs" />
     <Compile Include="Models\Serie.cs" />
     <Compile Include="Models\SerieData.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
@@ -221,6 +223,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <Resource Include="Fonts\fontawesome-webfont.ttf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
