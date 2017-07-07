@@ -61,7 +61,7 @@
         </metro:WindowCommands>
     </metro:MetroWindow.RightWindowCommands>
     <Grid>
-        <TabControl>
+        <TabControl Margin="5">
             <TabItem Header="{x:Static properties:Label.Series}">
                 <ScrollViewer VerticalScrollBarVisibility="Auto">
                     <ItemsControl ItemsSource="{Binding LstSeries, UpdateSourceTrigger=PropertyChanged}">

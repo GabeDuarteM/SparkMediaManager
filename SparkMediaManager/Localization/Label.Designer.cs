@@ -70,11 +70,74 @@ namespace SparkMediaManager.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Alerta.
+        /// </summary>
+        public static string Alerta {
+            get {
+                return ResourceManager.GetString("Alerta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Anime.
+        /// </summary>
+        public static string Anime {
+            get {
+                return ResourceManager.GetString("Anime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Animes.
         /// </summary>
         public static string Animes {
             get {
                 return ResourceManager.GetString("Animes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Animes, filmes e séries.
+        /// </summary>
+        public static string Animes_filmes_e_series {
+            get {
+                return ResourceManager.GetString("Animes_filmes_e_series", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Atenção.
+        /// </summary>
+        public static string Atencao {
+            get {
+                return ResourceManager.GetString("Atencao", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancelar.
+        /// </summary>
+        public static string Cancelar {
+            get {
+                return ResourceManager.GetString("Cancelar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Episódio.
+        /// </summary>
+        public static string Episodio {
+            get {
+                return ResourceManager.GetString("Episodio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Erro.
+        /// </summary>
+        public static string Erro {
+            get {
+                return ResourceManager.GetString("Erro", resourceCulture);
             }
         }
         
@@ -102,6 +165,15 @@ namespace SparkMediaManager.Localization {
         public static string FeedsDePesquisa {
             get {
                 return ResourceManager.GetString("FeedsDePesquisa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Filme.
+        /// </summary>
+        public static string Filme {
+            get {
+                return ResourceManager.GetString("Filme", resourceCulture);
             }
         }
         
@@ -169,6 +241,15 @@ namespace SparkMediaManager.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Info.
+        /// </summary>
+        public static string Info {
+            get {
+                return ResourceManager.GetString("Info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Inglês.
         /// </summary>
         public static string Ingles {
@@ -192,6 +273,24 @@ namespace SparkMediaManager.Localization {
         public static string Metodo_de_processamento {
             get {
                 return ResourceManager.GetString("Metodo_de_processamento", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Não.
+        /// </summary>
+        public static string Nao {
+            get {
+                return ResourceManager.GetString("Nao", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ok.
+        /// </summary>
+        public static string Ok {
+            get {
+                return ResourceManager.GetString("Ok", resourceCulture);
             }
         }
         
@@ -250,11 +349,38 @@ namespace SparkMediaManager.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Selecione.
+        /// </summary>
+        public static string Selecione {
+            get {
+                return ResourceManager.GetString("Selecione", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Série.
+        /// </summary>
+        public static string Serie {
+            get {
+                return ResourceManager.GetString("Serie", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Séries.
         /// </summary>
         public static string Series {
             get {
                 return ResourceManager.GetString("Series", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sim.
+        /// </summary>
+        public static string Sim {
+            get {
+                return ResourceManager.GetString("Sim", resourceCulture);
             }
         }
         

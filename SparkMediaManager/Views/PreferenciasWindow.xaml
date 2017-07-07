@@ -8,13 +8,14 @@
                 xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
                 xmlns:vm="clr-namespace:SparkMediaManager.ViewModels"
                 xmlns:properties="clr-namespace:SparkMediaManager.Localization"
+                xmlns:sparkControls="clr-namespace:SparkControls;assembly=SparkControls"
                 mc:Ignorable="d"
                 Title="{x:Static properties:Label.PREFERENCIAS_}" ChildWindowWidth="630" ChildWindowHeight="433"
                 IsOpen="True" AllowMove="True" ShowCloseButton="True" CloseOnOverlay="True"
                 AllowFocusElement="True" DataContext="{Binding PreferenciasViewModel, Source={StaticResource Locator}}"
                 Loaded="PreferenciasWindow_OnLoaded" ClosingFinished="PreferenciasWindow_OnClosingFinished">
     <Grid>
-        <TabControl>
+        <TabControl Margin="5">
             <TabItem Header="{ x:Static properties:Label.Geral}">
                 <Grid Margin="0 5 0 0">
                     <Grid.ColumnDefinitions>
@@ -137,16 +138,16 @@
                                 Content="&#xf078;" FontFamily="{StaticResource FontAwesome}" FontSize="16"
                                 Padding="0 0 0 2" />
                         <Button Height="40" Width="40" Style="{DynamicResource MetroCircleButtonStyle}"
-                                Content="&#xf014;" FontFamily="{StaticResource FontAwesome}" FontSize="18" />
+                                Content="&#xf014;" FontFamily="{StaticResource FontAwesome}" FontSize="18" Click="ButtonBase_OnClick" />
                     </StackPanel>
-                    <DataGrid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"
+                    <DataGrid ItemsSource="{Binding ObjListaFeedsViewModel.LstFeedsVm}" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"
                               ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                               ScrollViewer.VerticalScrollBarVisibility="Auto" AutoGenerateColumns="False"
                               IsReadOnly="True" HeadersVisibility="Column">
                         <DataGrid.Columns>
-                            <DataGridTextColumn Header="Nome" Width="3*" Binding="{Binding sDsFeed}" />
-                            <DataGridTextColumn Header="URL" Width="5*" Binding="{Binding sLkFeed}" />
-                            <DataGridTextColumn Header="Priorid." Width="*" Binding="{Binding nNrPrioridade}" />
+                            <DataGridTextColumn Header="Nome" Width="3*" Binding="{Binding ObjFeed.StrNome}" />
+                            <DataGridTextColumn Header="URL" Width="5*" Binding="{Binding ObjFeed.StrLink}" />
+                            <DataGridTextColumn Header="Priorid." Width="*" Binding="{Binding ObjFeed.IntPrioridade}" />
                         </DataGrid.Columns>
                     </DataGrid>
                 </Grid>

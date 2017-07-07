@@ -5,6 +5,7 @@
 using System.ComponentModel.DataAnnotations;
 using SparkMediaManager.Atributos;
 using SparkMediaManager.Helpers;
+using SparkMediaManager.ViewModels;
 
 namespace SparkMediaManager.Models
 {

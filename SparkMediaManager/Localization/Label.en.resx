@@ -120,8 +120,17 @@
   <data name="adicionar" xml:space="preserve">
     <value>add</value>
   </data>
+  <data name="Anime" xml:space="preserve">
+    <value>Anime</value>
+  </data>
   <data name="Animes" xml:space="preserve">
     <value>Animes</value>
+  </data>
+  <data name="Animes_filmes_e_series" xml:space="preserve">
+    <value>Animes, movies and TV shows</value>
+  </data>
+  <data name="Episodio" xml:space="preserve">
+    <value>Episode</value>
   </data>
   <data name="Fechar" xml:space="preserve">
     <value>Close</value>
@@ -131,6 +140,9 @@
   </data>
   <data name="FeedsDePesquisa" xml:space="preserve">
     <value>Search feeds</value>
+  </data>
+  <data name="Filme" xml:space="preserve">
+    <value>Movie</value>
   </data>
   <data name="Filmes" xml:space="preserve">
     <value>Movies</value>
@@ -179,6 +191,12 @@
   </data>
   <data name="Salvar" xml:space="preserve">
     <value>Save</value>
+  </data>
+  <data name="Selecione" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="Serie" xml:space="preserve">
+    <value>TV show</value>
   </data>
   <data name="Series" xml:space="preserve">
     <value>TV Shows</value>

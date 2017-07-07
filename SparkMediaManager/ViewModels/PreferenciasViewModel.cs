@@ -4,7 +4,9 @@
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.Windows;
 using SparkMediaManager.Helpers;
 using SparkMediaManager.Localization;
 
@@ -67,6 +69,10 @@ namespace SparkMediaManager.ViewModels
             StrVisualizacaoFormatoAnime = "My Hero Academia - 06 - Rage, You Damn Nerd";
         }
 
+        private ListaFeedsViewModel _objListaFeedsViewModel;
+
+        public ListaFeedsViewModel ObjListaFeedsViewModel { get { return _objListaFeedsViewModel; } set { Set(ref _objListaFeedsViewModel, value); } }
+
         public Dictionary<Enum, string> DicIdiomasAplicacao { get { return _dicIdiomasAplicacao; } set { Set(ref _dicIdiomasAplicacao, value); } }
 
         public Dictionary<string, string> DicIdiomasPesquisa { get { return _dicIdiomasPesquisa; } set { Set(ref _dicIdiomasPesquisa, value); } }
@@ -111,6 +117,7 @@ namespace SparkMediaManager.ViewModels
         ///     com os idiomas a url é http://thetvdb.com/api/{APIKey}/languages.xml
         /// </summary>
         /// <returns></returns>
+        [Localizable(false)]
         private Dictionary<string, string> GetIdiomas()
         {
             var idiomas = new Dictionary<string, string>

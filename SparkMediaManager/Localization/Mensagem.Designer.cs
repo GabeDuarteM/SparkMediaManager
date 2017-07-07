@@ -61,6 +61,403 @@ namespace SparkMediaManager.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao abrir o feed &quot;{0}&quot; (URL: &quot;{1}&quot;)..
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_abrir_o_feed_0_URL_1_ {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_abrir_o_feed_0_URL_1_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao adicionar {0}..
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_adicionar_0_ {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_adicionar_0_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao adicionar {1} &quot;{0}&quot;.
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_adicionar_1_0_ {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_adicionar_1_0_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao adicionar a qualidade &quot;{0}&quot;.
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_adicionar_a_qualidade_0_ {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_adicionar_a_qualidade_0_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao adicionar episódios..
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_adicionar_episódios {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_adicionar_episódios", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao adicionar o conteúdo..
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_adicionar_o_conteúdo {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_adicionar_o_conteúdo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao adicionar o episódio com o ID {0}.
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_adicionar_o_episódio_com_o_ID_0_ {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_adicionar_o_episódio_com_o_ID_0_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao adicionar o feed &quot;{0}&quot;.
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_adicionar_o_feed_0_ {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_adicionar_o_feed_0_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao alterar a prioridade do feed {0}.
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_alterar_a_prioridade_do_feed__0_ {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_alterar_a_prioridade_do_feed__0_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao aplicar o algoritmo de correspondência no arquivo &quot;{0}&quot;.
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_aplicar_o_algoritimo_de_correspondencia_no_arquivo_0_ {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_aplicar_o_algoritimo_de_correspondencia_no_arquivo_0_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao atualizar {0}..
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_atualizar_0_ {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_atualizar_0_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao atualizar {1} &quot;{0}&quot;..
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_atualizar_1_0_ {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_atualizar_1_0_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao atualizar a qualidade &quot;{0}&quot;.
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_atualizar_a_qualidade_0_ {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_atualizar_a_qualidade_0_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao atualizar o conteúdo..
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_atualizar_o_conteúdo {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_atualizar_o_conteúdo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao atualizar o episódio de ID {0}.
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_atualizar_o_episódio_de_ID_0_ {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_atualizar_o_episódio_de_ID_0_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao atualizar o feed &quot;{0}&quot;.
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_atualizar_o_feed_0_ {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_atualizar_o_feed_0_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao atualizar os episódios .
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_atualizar_os_episódios {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_atualizar_os_episódios", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao criar o {0}.
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_criar_o__0_ {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_criar_o__0_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao ordenar a lista utilizando o algoritmo de comparação..
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_ordenar_a_lista_utilizando_o_algoritmo_de_comparação {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_ordenar_a_lista_utilizando_o_algoritmo_de_comparação", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao pesquisar {0}..
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_pesquisar_0_ {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_pesquisar_0_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao pesquisar a qualidade de download de código &quot;{0}&quot;..
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_pesquisar_a_qualidade_de_download_de_código_0_ {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_pesquisar_a_qualidade_de_download_de_código_0_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao pesquisar o feed de código &quot;{1}&quot;.
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_pesquisar_o_feed_de_código_1_ {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_pesquisar_o_feed_de_código_1_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao pesquisar todos(as) os(as) {0}..
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_pesquisar_todos_os_0_ {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_pesquisar_todos_os_0_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao procurar os episódios para baixar..
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_procurar_os_episódios_para_baixar {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_procurar_os_episódios_para_baixar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao realizar o download..
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_realizar_o_download {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_realizar_o_download", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao realizar o download das imagens..
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_realizar_o_download_das_imagens {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_realizar_o_download_das_imagens", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao realizar o download do episódio &quot;{1}&quot; do RSS &quot;{0}&quot;.
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_realizar_o_download_do_episódio_1_do_RSS_0_ {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_realizar_o_download_do_episódio_1_do_RSS_0_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao realizar o pós processamento..
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_realizar_o_pós_processamento {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_realizar_o_pós_processamento", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao reconhecer o episódio .
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_reconhecer_o_episódio {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_reconhecer_o_episódio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao registrar a mensagem no log..
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_registrar_a_mensagem_no_log {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_registrar_a_mensagem_no_log", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao remover {0}..
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_remover_0_ {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_remover_0_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao remover {1} &quot;{0}&quot;.
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_remover_1_0_ {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_remover_1_0_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao remover a qualidade &quot;{0}&quot;.
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_remover_a_qualidade_0_ {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_remover_a_qualidade_0_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao remover o episódio &quot;{0}&quot;.
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_remover_o_episódio_0_ {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_remover_o_episódio_0_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao remover o feed &quot;{0}&quot;.
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_remover_o_feed_0_ {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_remover_o_feed_0_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao renomear os episódios dos argumentos na aplicação. Argumento: &quot;{0}&quot;..
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_renomear_os_episódios_dos_argumentos_na_aplicação_Argumento_0_ {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_renomear_os_episódios_dos_argumentos_na_aplicação_Argumento_0_" +
+                        "", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao retornar a lista de feeds..
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_retornar_a_lista_de_feeds {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_retornar_a_lista_de_feeds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao retornar a lista de qualidade de download..
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_retornar_a_lista_de_qualidade_de_download {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_retornar_a_lista_de_qualidade_de_download", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao retornar o episódio &quot;{0}&quot; da temporada &quot;{1}&quot; do vídeo de ID &quot;{2}&quot;..
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_retornar_o_episódio_0_da_temporada_1_do_vídeo_de_ID_2_ {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_retornar_o_episódio_0_da_temporada_1_do_vídeo_de_ID_2_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao retornar o episódio com o código &quot;{0}&quot;.
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_retornar_o_episódio_com_o_código_0_ {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_retornar_o_episódio_com_o_código_0_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao salvar os episódios de &quot;{0}&quot;.
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_salvar_os_episódios_de_0_ {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_salvar_os_episódios_de_0_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao verificar os episódios no diretório &quot;{0}&quot;. Tipo do arquivo: &quot;{1}&quot;.
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_verificar_os_episódios_no_diretório_0__Tipo_1_ {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_verificar_os_episódios_no_diretório_0__Tipo_1_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocorreu um erro ao verificar se o episódio &quot;{0}&quot; ja foi renomeado..
+        /// </summary>
+        public static string Ocorreu_um_erro_ao_verificar_se_o_episódio_ja_foi_renomeado_0_ {
+            get {
+                return ResourceManager.GetString("Ocorreu_um_erro_ao_verificar_se_o_episódio_ja_foi_renomeado_0_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remover feeds.
+        /// </summary>
+        public static string Remover_feeds {
+            get {
+                return ResourceManager.GetString("Remover_feeds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Selecione a pasta onde estão armazenadas as séries....
         /// </summary>
         public static string Selecione_a_pasta_onde_estao_armazenadas_as_series {
@@ -102,6 +499,24 @@ namespace SparkMediaManager.Localization {
         public static string Valor_fora_dos_limites_permitidos {
             get {
                 return ResourceManager.GetString("Valor_fora_dos_limites_permitidos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Verifique mais detalhes no log.
+        /// </summary>
+        public static string Verifique_mais_detalhes_no_log {
+            get {
+                return ResourceManager.GetString("Verifique_mais_detalhes_no_log", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Você realmente deseja remover os feeds selecionados?.
+        /// </summary>
+        public static string Você_realmente_deseja_remover_os_feeds_selecionados_ {
+            get {
+                return ResourceManager.GetString("Você_realmente_deseja_remover_os_feeds_selecionados_", resourceCulture);
             }
         }
     }

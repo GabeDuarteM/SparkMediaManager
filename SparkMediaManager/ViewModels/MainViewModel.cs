@@ -4,10 +4,10 @@
 
 using System.Collections.ObjectModel;
 using System.IO;
-using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using GalaSoft.MvvmLight.CommandWpf;
+using MahApps.Metro.Controls;
 using MahApps.Metro.SimpleChildWindow;
 using SparkMediaManager.Models;
 using SparkMediaManager.Views;
@@ -117,7 +117,7 @@ namespace SparkMediaManager.ViewModels
 
         public ObservableCollection<Serie> LstSeries { get { return _lstSeries; } set { Set(ref _lstSeries, value); } }
 
-        public Window ObjWindow { get; set; }
+        public MetroWindow ObjWindow { get; set; }
 
         private void AbrirProcurarConteudo()
         {

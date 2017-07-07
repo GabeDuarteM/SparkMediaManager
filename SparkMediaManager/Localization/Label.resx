@@ -100,8 +100,17 @@
   <data name="adicionar" xml:space="preserve">
     <value>adicionar</value>
   </data>
+  <data name="Anime" xml:space="preserve">
+    <value>Anime</value>
+  </data>
   <data name="Animes" xml:space="preserve">
     <value>Animes</value>
+  </data>
+  <data name="Animes_filmes_e_series" xml:space="preserve">
+    <value>Animes, filmes e séries</value>
+  </data>
+  <data name="Episodio" xml:space="preserve">
+    <value>Episódio</value>
   </data>
   <data name="Fechar" xml:space="preserve">
     <value>Fechar</value>
@@ -111,6 +120,9 @@
   </data>
   <data name="FeedsDePesquisa" xml:space="preserve">
     <value>Feeds de pesquisa</value>
+  </data>
+  <data name="Filme" xml:space="preserve">
+    <value>Filme</value>
   </data>
   <data name="Filmes" xml:space="preserve">
     <value>Filmes</value>
@@ -160,6 +172,12 @@
   <data name="Salvar" xml:space="preserve">
     <value>Salvar</value>
   </data>
+  <data name="Selecione" xml:space="preserve">
+    <value>Selecione</value>
+  </data>
+  <data name="Serie" xml:space="preserve">
+    <value>Série</value>
+  </data>
   <data name="Series" xml:space="preserve">
     <value>Séries</value>
   </data>
@@ -168,5 +186,29 @@
   </data>
   <data name="Visualizacao" xml:space="preserve">
     <value>Visualização:</value>
+  </data>
+  <data name="Erro" xml:space="preserve">
+    <value>Erro</value>
+  </data>
+  <data name="Atencao" xml:space="preserve">
+    <value>Atenção</value>
+  </data>
+  <data name="Info" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="Alerta" xml:space="preserve">
+    <value>Alerta</value>
+  </data>
+  <data name="Sim" xml:space="preserve">
+    <value>Sim</value>
+  </data>
+  <data name="Nao" xml:space="preserve">
+    <value>Não</value>
+  </data>
+  <data name="Cancelar" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>Ok</value>
   </data>
 </root>

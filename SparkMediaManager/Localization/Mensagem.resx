@@ -97,6 +97,132 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Ocorreu_um_erro_ao_abrir_o_feed_0_URL_1_" xml:space="preserve">
+    <value>Ocorreu um erro ao abrir o feed "{0}" (URL: "{1}").</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_adicionar_0_" xml:space="preserve">
+    <value>Ocorreu um erro ao adicionar {0}.</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_adicionar_1_0_" xml:space="preserve">
+    <value>Ocorreu um erro ao adicionar {1} "{0}"</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_adicionar_a_qualidade_0_" xml:space="preserve">
+    <value>Ocorreu um erro ao adicionar a qualidade "{0}"</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_adicionar_episódios" xml:space="preserve">
+    <value>Ocorreu um erro ao adicionar episódios.</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_adicionar_o_conteúdo" xml:space="preserve">
+    <value>Ocorreu um erro ao adicionar o conteúdo.</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_adicionar_o_episódio_com_o_ID_0_" xml:space="preserve">
+    <value>Ocorreu um erro ao adicionar o episódio com o ID {0}</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_adicionar_o_feed_0_" xml:space="preserve">
+    <value>Ocorreu um erro ao adicionar o feed "{0}"</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_aplicar_o_algoritimo_de_correspondencia_no_arquivo_0_" xml:space="preserve">
+    <value>Ocorreu um erro ao aplicar o algoritmo de correspondência no arquivo "{0}"</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_atualizar_0_" xml:space="preserve">
+    <value>Ocorreu um erro ao atualizar {0}.</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_atualizar_1_0_" xml:space="preserve">
+    <value>Ocorreu um erro ao atualizar {1} "{0}".</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_atualizar_a_qualidade_0_" xml:space="preserve">
+    <value>Ocorreu um erro ao atualizar a qualidade "{0}"</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_atualizar_o_conteúdo" xml:space="preserve">
+    <value>Ocorreu um erro ao atualizar o conteúdo.</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_atualizar_o_episódio_de_ID_0_" xml:space="preserve">
+    <value>Ocorreu um erro ao atualizar o episódio de ID {0}</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_atualizar_o_feed_0_" xml:space="preserve">
+    <value>Ocorreu um erro ao atualizar o feed "{0}"</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_atualizar_os_episódios" xml:space="preserve">
+    <value>Ocorreu um erro ao atualizar os episódios </value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_criar_o__0_" xml:space="preserve">
+    <value>Ocorreu um erro ao criar o {0}</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_ordenar_a_lista_utilizando_o_algoritmo_de_comparação" xml:space="preserve">
+    <value>Ocorreu um erro ao ordenar a lista utilizando o algoritmo de comparação.</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_pesquisar_0_" xml:space="preserve">
+    <value>Ocorreu um erro ao pesquisar {0}.</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_pesquisar_a_qualidade_de_download_de_código_0_" xml:space="preserve">
+    <value>Ocorreu um erro ao pesquisar a qualidade de download de código "{0}".</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_pesquisar_o_feed_de_código_1_" xml:space="preserve">
+    <value>Ocorreu um erro ao pesquisar o feed de código "{1}"</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_pesquisar_todos_os_0_" xml:space="preserve">
+    <value>Ocorreu um erro ao pesquisar todos(as) os(as) {0}.</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_procurar_os_episódios_para_baixar" xml:space="preserve">
+    <value>Ocorreu um erro ao procurar os episódios para baixar.</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_realizar_o_download" xml:space="preserve">
+    <value>Ocorreu um erro ao realizar o download.</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_realizar_o_download_das_imagens" xml:space="preserve">
+    <value>Ocorreu um erro ao realizar o download das imagens.</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_realizar_o_download_do_episódio_1_do_RSS_0_" xml:space="preserve">
+    <value>Ocorreu um erro ao realizar o download do episódio "{1}" do RSS "{0}"</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_realizar_o_pós_processamento" xml:space="preserve">
+    <value>Ocorreu um erro ao realizar o pós processamento.</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_reconhecer_o_episódio" xml:space="preserve">
+    <value>Ocorreu um erro ao reconhecer o episódio </value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_registrar_a_mensagem_no_log" xml:space="preserve">
+    <value>Ocorreu um erro ao registrar a mensagem no log.</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_remover_0_" xml:space="preserve">
+    <value>Ocorreu um erro ao remover {0}.</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_remover_1_0_" xml:space="preserve">
+    <value>Ocorreu um erro ao remover {1} "{0}"</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_remover_a_qualidade_0_" xml:space="preserve">
+    <value>Ocorreu um erro ao remover a qualidade "{0}"</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_remover_o_episódio_0_" xml:space="preserve">
+    <value>Ocorreu um erro ao remover o episódio "{0}"</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_remover_o_feed_0_" xml:space="preserve">
+    <value>Ocorreu um erro ao remover o feed "{0}"</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_renomear_os_episódios_dos_argumentos_na_aplicação_Argumento_0_" xml:space="preserve">
+    <value>Ocorreu um erro ao renomear os episódios dos argumentos na aplicação. Argumento: "{0}".</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_retornar_a_lista_de_feeds" xml:space="preserve">
+    <value>Ocorreu um erro ao retornar a lista de feeds.</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_retornar_a_lista_de_qualidade_de_download" xml:space="preserve">
+    <value>Ocorreu um erro ao retornar a lista de qualidade de download.</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_retornar_o_episódio_0_da_temporada_1_do_vídeo_de_ID_2_" xml:space="preserve">
+    <value>Ocorreu um erro ao retornar o episódio "{0}" da temporada "{1}" do vídeo de ID "{2}".</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_retornar_o_episódio_com_o_código_0_" xml:space="preserve">
+    <value>Ocorreu um erro ao retornar o episódio com o código "{0}"</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_salvar_os_episódios_de_0_" xml:space="preserve">
+    <value>Ocorreu um erro ao salvar os episódios de "{0}"</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_verificar_os_episódios_no_diretório_0__Tipo_1_" xml:space="preserve">
+    <value>Ocorreu um erro ao verificar os episódios no diretório "{0}". Tipo do arquivo: "{1}"</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_verificar_se_o_episódio_ja_foi_renomeado_0_" xml:space="preserve">
+    <value>Ocorreu um erro ao verificar se o episódio "{0}" ja foi renomeado.</value>
+  </data>
   <data name="Selecione_a_pasta_onde_estao_armazenadas_as_series" xml:space="preserve">
     <value>Selecione a pasta onde estão armazenadas as séries...</value>
   </data>
@@ -111,5 +237,17 @@
   </data>
   <data name="Valor_fora_dos_limites_permitidos" xml:space="preserve">
     <value>Valor fora dos limites permitidos.</value>
+  </data>
+  <data name="Verifique_mais_detalhes_no_log" xml:space="preserve">
+    <value>Verifique mais detalhes no log</value>
+  </data>
+  <data name="Ocorreu_um_erro_ao_alterar_a_prioridade_do_feed__0_" xml:space="preserve">
+    <value>Ocorreu um erro ao alterar a prioridade do feed {0}</value>
+  </data>
+  <data name="Você_realmente_deseja_remover_os_feeds_selecionados_" xml:space="preserve">
+    <value>Você realmente deseja remover os feeds selecionados?</value>
+  </data>
+  <data name="Remover_feeds" xml:space="preserve">
+    <value>Remover feeds</value>
   </data>
 </root>

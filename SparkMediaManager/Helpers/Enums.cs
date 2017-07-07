@@ -30,17 +30,38 @@ namespace SparkMediaManager.Helpers
 
         public enum TipoConteudo
         {
-            [Description("Selecione")] Selecione = 0,
+            [Display(ResourceType = typeof(Label), Description = "Selecione")] Selecione = 0,
 
-            [Description("Filme")] Filme = 1,
+            [Display(ResourceType = typeof(Label), Description = "Filme")] Filme = 1,
 
-            [Description("Série")] Série = 2,
+            [Display(ResourceType = typeof(Label), Description = "Serie")] Série = 2,
 
-            [Description("Anime")] Anime = 3,
+            [Display(ResourceType = typeof(Label), Description = "Anime")] Anime = 3,
 
-            [Description("Episódio")] Episódio = 4,
+            [Display(ResourceType = typeof(Label), Description = "Episodio")] Episódio = 4,
 
-            [Description("Anime, filme e série")] AnimeFilmeSérie = 7
+            [Display(ResourceType = typeof(Label), Description = "Animes_filmes_e_series")] AnimeFilmeSérie = 7
+        }
+
+        public enum TipoMensagem
+        {
+            [Display(ResourceType = typeof(Label), Description = "Selecione")]
+            Selecione = 0,
+            [Display(ResourceType = typeof(Label), Description = "Alerta")]
+            Alerta = 1,
+
+            AlertaSimNao = 2,
+
+            AlertaSimNaoCancela = 3,
+            [Display(ResourceType = typeof(Label), Description = "Info")]
+            Informativa = 4,
+
+            QuestionamentoSimNao = 5,
+
+            QuestionamentoSimNaoCancela = 6,
+
+            [Display(ResourceType = typeof(Label), Description = "Erro")]
+            Erro = 7
         }
 
         public static string GetDescricao(this Enum enuTipo)
